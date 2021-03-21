@@ -19,4 +19,3 @@ while True:
     buf = stream.read(1024)
     if buf:
         stream.stop_stream()
-        decoder.process_raw(buf, False, False)
