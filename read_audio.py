@@ -5,8 +5,8 @@ import config
 
 
 p = pyaudio.PyAudio()
-    frames_per_buffer = int(config.MIC_RATE / config.FPS)
-    stream = p.open(format=pyaudio.paInt16,
+frames_per_buffer = int(config.MIC_RATE / config.FPS)
+stream = p.open(format=pyaudio.paInt16,
                     channels=1,
                     rate=config.MIC_RATE,
                     input=True,
